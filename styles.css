@@ -1,0 +1,394 @@
+:root {
+  --backgroundColor: #BFC1B0;
+  --primaryTextColor: #2F4858;
+  --secondaryTextColor: #416169;
+  --shadowColor: #9BA99A;
+}
+
+* {
+  margin: 0;
+  background-color: var(--backgroundColor);
+}
+
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 4fr;
+  grid-template-rows: 0.4fr 3.5fr 3fr 1.5fr 1.5fr 0.6fr;
+  grid-gap: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: larger;
+  box-shadow: 0 3px 6px var(--shadowColor);
+}
+
+.brandTitle {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: var(--primaryTextColor);
+  font-weight: bolder;
+}
+
+.navLinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: var(--primaryTextColor);
+  padding: 1rem;
+  display: block;
+}
+
+.navLinks li:hover {
+  border-radius: 0.25rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.toggleButton {
+  position: absolute;
+  right: 1rem;
+  display: none;
+  color: var(--primaryTextColor);
+}
+
+.homesection {
+  background-color: var(--backgroundColor);
+}
+
+.nameTitle {
+  color: var(--primaryTextColor);
+}
+
+.nameSubtitle {
+  color: var(--secondaryTextColor);
+  font-size: medium;
+}
+
+.aboutsection {
+  background-color: var(--backgroundColor);
+}
+
+.aboutTitle {
+  color: var(--primaryTextColor);
+}
+
+.aboutText {
+  color: var(--secondaryTextColor);
+  font-size: medium;
+}
+
+.resumesection {
+  background-color: var(--backgroundColor);
+}
+
+.resumeTitle {
+  color: var(--primaryTextColor);
+}
+
+.resumeSubtitle {
+  color: var(--secondaryTextColor);
+  font-size: medium;
+}
+
+.resumeIcon {
+  color: var(--primaryTextColor);
+  font-size: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+.resumeButton {
+  box-shadow: 0 2px 10px var(--primaryTextColor);
+  margin-top: 1rem;
+}
+
+.resumeButton:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  box-shadow: 1px 2px 10px var(--primaryTextColor);
+}
+
+.contactsection {
+  background-color: var(--backgroundColor);
+}
+
+.contactTitle {
+  color: var(--primaryTextColor);
+}
+
+.contactDescription {
+  color: var(--secondaryTextColor);
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: var(--backgroundColor);
+  box-shadow: inset 0 3px 6px var(--shadowColor);
+}
+
+.footerTitle {
+  color: var(--primaryTextColor);
+}
+
+.footerCopyright {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--secondaryTextColor);
+}
+
+.linkedinLink {
+  text-decoration: none;
+}
+
+.contactInformation {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.linkedinIcon {
+  color: var(--primaryTextColor);
+  margin-right: 1rem;
+}
+
+.linkedinIcon:hover,
+.emailIcon:hover {
+  font-size: 2.5rem;
+}
+
+.emailIcon {
+  color: var(--primaryTextColor);
+  margin-left: 1rem;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .navLinks ul {
+    margin-right: 1rem;
+    padding: 0;
+    display: flex;
+  }
+
+  .homesection {
+    display: inline;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+  }
+
+  .nameTitle {
+    margin-top: 15rem;
+    color: var(--primaryTextColor);
+    font-size: 5rem;
+  }
+
+  .nameSubtitle {
+    color: var(--secondaryTextColor);
+    font-size: medium;
+  }
+
+  .homePicture {
+    width: 45rem;
+    margin-right: 10rem;
+    float: right;
+  }
+
+  .aboutsection {
+    display: inline-flex;
+    text-align: center;
+  }
+
+  .aboutText {
+    align-self: center;
+  }
+
+  .aboutTitle {
+    font-size: 4rem;
+  }
+
+
+  .aboutContent {
+    width: 30rem;
+  }
+
+  .aboutPicture {
+    width: 30rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+
+  .resumesection {
+    text-align: center;
+    margin-top: 10rem;
+  }
+
+  .resumeTitle {
+    font-size: 3rem;
+  }
+
+  .resumeButton {
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 1rem;
+    font-size: 1rem;
+  }
+
+  .contactTitle {
+    font-size: 3rem;
+  }
+
+
+  .contactsection {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .footer {
+    margin-top: 5rem;
+  }
+
+  .footerTitle {
+    margin: 1rem;
+  }
+
+  .footerCopyright {
+    text-align: center;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 3.5fr 3fr 1.5fr 1.5fr 0.6fr;
+    grid-gap: 0.2rem;
+  }
+
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  .toggleButton {
+    display: flex;
+    margin: 1rem;
+    cursor: pointer;
+  }
+
+  .navLinks {
+    align-self: center;
+    display: none;
+    width: 30%;
+    background-color: var(--secondaryTextColor);
+  }
+
+  .navLinks ul {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+
+  }
+
+  .navLinks li {
+    text-align: center;
+  }
+
+  .navLinks li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .toggleButton.active {
+    transition: all 0.2s;
+    transform: rotate(90deg);
+  }
+
+  .homesection {
+    text-align: center;
+    padding: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .homePicture {
+    width: 20rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .aboutsection {
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .aboutPicture {
+    width: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .resumesection {
+    text-align: center;
+  }
+
+
+  .resumeButton {
+    display: inline-block;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 1rem;
+    font-size: 1rem;
+  }
+
+  .contactsection {
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+}
